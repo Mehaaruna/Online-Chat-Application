@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Loading from "./Loading";
-import ChatApp from "./ChatApp"; // Your chat interface
+import ChatApp from "./ChatApp";
 import Login from "./Login";
 
 function App() {
