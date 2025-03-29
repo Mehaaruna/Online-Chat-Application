@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Loading.css"; // Create this file for styles
-//import logo from "./images/logo.jpg"; // Replace with your logo
+import "./Loading.css";
 
 const Loading = ({ onFinish }) => {
   useEffect(() => {
