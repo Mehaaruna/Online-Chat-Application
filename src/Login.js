@@ -7,7 +7,7 @@ function Login({ onLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username.trim() && password.trim()) {
-      onLogin(); // Proceed to ChatApp
+      onLogin(); // Proceed to Chat
     } else {
       alert("Please enter both username and password!");
     }
