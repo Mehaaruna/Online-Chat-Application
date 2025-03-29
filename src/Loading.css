@@ -1,0 +1,51 @@
+.loading-container {
+    width: 500px;
+    max-width: 400px;
+    height: 500px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #646262;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4a90e2;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .loading-logo {
+    width: 100px;
+    height: 100px;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
