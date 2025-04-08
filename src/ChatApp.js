@@ -7,7 +7,7 @@ import "./style.css"
 
 const socket = io.connect("http://localhost:5000");
 
-const ChatApp = () => {
+const ChatApp = ({username}) => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
@@ -39,7 +39,7 @@ const ChatApp = () => {
     <div className="chat-container">
       <div className="chat-header">
           <img src="/images/profile.png" alt="profile" className="profile-pic" />
-          <span className="chat-name">Gubluuu...</span>
+          <span className="chat-name">{username}...</span>
           <div className="icons">
             
           </div>
